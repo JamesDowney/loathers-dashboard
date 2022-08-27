@@ -12,6 +12,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
+import LoathersGridItem from "../components/LoathersGridItem";
 
 const Home: NextPage = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -30,7 +31,13 @@ const Home: NextPage = () => {
         />
       </HStack>
       <Grid gap={10} minWidth="fit-content">
-        <GridItem></GridItem>
+        <GridItem>
+          <LoathersGridItem
+            scriptName="garbage-collector"
+            runScript="garbo"
+            image="garbo_logo.png"
+          />
+        </GridItem>
       </Grid>
     </VStack>
   );
