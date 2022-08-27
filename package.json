@@ -4,14 +4,30 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export -o ./kolmafia/relay/loathers-dashboard",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/core": "^7.18.13",
+    "@chakra-ui/icons": "^2.0.9",
+    "@chakra-ui/react": "^2.2.9",
+    "@chakra-ui/styled-system": "^2.2.8",
+    "@chakra-ui/system": "^2.2.7",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.10.2",
+    "@mui/material": "^5.10.2",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "@typescript-eslint/parser": "^5.35.1",
+    "eslint-plugin-libram": "^0.2.14",
+    "framer-motion": "^6",
+    "kolmafia": "^3.4.0",
+    "libram": "^0.6.23",
     "next": "12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0"
   },
   "devDependencies": {
     "@types/node": "18.7.13",
